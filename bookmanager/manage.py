@@ -3,6 +3,7 @@
 import os
 import sys
 
+"""alt+enter可快捷补import"""
 
 def main():
     """Run administrative tasks."""
