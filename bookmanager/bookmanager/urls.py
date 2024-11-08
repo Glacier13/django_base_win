@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from book.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path(路由，视图函数名)
+    # 请求->路由->视图->响应
+    path('index/',index),
 ]
