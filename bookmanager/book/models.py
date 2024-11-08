@@ -41,7 +41,7 @@ class PeopleInfo(models.Model):
     )
     name = models.CharField(max_length=10, unique=True)
     gender = models.SmallIntegerField(choices=GENDER_CHOICES,default=1)
-    description = models.CharField(max_length=100,null=True)
+    description = models.CharField(max_length=200, null=True)
     is_delete=models.BooleanField(default=False)
     # 外键约束：人属于哪本书
     """
