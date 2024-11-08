@@ -12,6 +12,10 @@ class BookInfo(models.Model):
     # id
     name = models.CharField(max_length=10)
 
+    # 重写str方法，以显示书籍名字
+    def __str__(self):
+        return self.name
+
 class PeopleInfo(models.Model):
     name = models.CharField(max_length=10)
     gender = models.BooleanField()
